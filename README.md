@@ -36,6 +36,8 @@ A folder can contain any combination of the three files. Templates are in [`temp
 
 ## How to check new data
 
+**In your browser (nothing to install):** open the sandbox page at https://kshkishore.github.io/pragmatic-eval-sandbox/, drop in your file and click **Check my data**. The page runs the same checker in the browser with Pyodide and shows the report. Your file is not uploaded or saved anywhere.
+
 **On GitHub (nothing to install):**
 1. On the repository page, click **Add file → Upload files**.
 2. Drag in your file. In the file name box, type a new folder name first, for example `submissions/my-new-items/items.json`.

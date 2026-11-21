@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pragmatic Evaluation Sandbox</title>
+<meta name="description" content="Check new test items, chatbot replies or judge scores against the thesis rules and results, in your browser, without touching the thesis data.">
+<link rel="stylesheet" href="site/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <p class="eyebrow">Sandbox · check new data</p>
+    <h1>Pragmatic Evaluation Sandbox</h1>
+    <p class="sub">Check new data against the rules and results of the thesis <i>Agentic Evaluation of Pragmatic Competence in Multimodal Large Language Models</i>, without touching the thesis data.</p>
+  </div>
+</header>
+<main class="wrap panel">
+  <div class="cards">
+    <article class="card"><h3>New test items</h3><p>A file of items with a prompt, specification, reference and A, B and C responses. The sandbox checks the thesis's construction rules and compares the items with the 160 thesis items.</p><div><a href="templates/items_template.json" download>Template (JSON)</a></div></article>
+    <article class="card"><h3>Chatbot replies</h3><p>Replies of any chatbot to the 160 thesis prompts. The sandbox applies the format rule, the chart-fact rule and the text-type features, computes the metrics, and compares the results with G1 and G2.</p><div><a href="templates/replies_template.csv" download>Template (CSV)</a></div></article>
+    <article class="card"><h3>Judge scores</h3><p>A new judge's scores for the 480 A, B and C responses. The sandbox computes pairwise accuracy, agreement with J1 and J2 and McNemar tests, and compares the judge with every thesis judge.</p><div><a href="templates/judge_template_rubric.csv" download>Rubric template</a> · <a href="templates/judge_template_score.csv" download>Score template</a></div></article>
+  </div>
+
+  <h2>1. Add your files</h2>
+  <label class="drop" id="drop">
+    <input id="files" type="file" multiple accept=".json,.jsonl,.csv,.png,.jpg,.jpeg">
+    <b>Drop files here or click to choose</b><br><span class="muted">An items, replies or judge file (.json, .jsonl or .csv), plus chart images for chart items</span>
+  </label>
+  <ul id="filelist" class="filelist"></ul>
+  <div class="examples"><span class="muted">Or try an example:</span>
+    <button data-ex="example_items">New items</button><button data-ex="example_replies">Chatbot replies</button><button data-ex="example_judge">Judge scores</button></div>
+
+  <h2>2. Check</h2>
+  <div class="runbar"><button id="go" class="primary big" disabled>Check my data</button><span id="status" class="muted"></span></div>
+  <p class="note">Everything runs in your browser. Your files are not uploaded anywhere and nothing is saved to the repository. The first check downloads Python and its packages (about 40&nbsp;MB, cached afterwards) and takes about a minute to start. Judge files take longer to check, because the confidence intervals use 10,000 bootstrap resamples.</p>
+
+  <div id="out"></div>
+  <details class="log"><summary>Python output</summary><pre id="log"></pre></details>
+
+  <h2>How the checks are made</h2>
+  <ul class="facts">
+    <li>The rules are the thesis's own: the format rule, the chart-fact rule, the text-type features and the definition of pairwise accuracy, copied unchanged from the thesis code.</li>
+    <li>The checker compares new data with a frozen, read-only copy of the thesis data. Every check first verifies that copy against its checksums.</li>
+    <li>A self-test runs the thesis's own data through the checker and reproduces the published thesis numbers.</li>
+    <li>Only the lightweight metrics (BLEU, chrF, ROUGE-L, length) are computed here. The neural metrics and LLM judges need a local computer; see the <a href="https://github.com/kshkishore/agentic-pragmatic-evaluation-thesis">thesis repository</a>.</li>
+  </ul>
+  <p>You can also check data on GitHub: upload a file to <code>submissions/&lt;new-folder&gt;/</code> in the <a href="https://github.com/kshkishore/pragmatic-eval-sandbox">repository</a>, and the report appears in the Actions tab.</p>
+</main>
+<footer class="wrap foot"><p>Code: MIT · Thesis data: CC&nbsp;BY&nbsp;4.0 · <a href="https://github.com/kshkishore/pragmatic-eval-sandbox">Repository</a> · <a href="https://github.com/kshkishore/agentic-pragmatic-evaluation-thesis">Thesis data</a></p></footer>
+<script src="site/app.js"></script>
+</body>
+</html>
