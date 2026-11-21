@@ -1,0 +1,42 @@
+{
+ "items": [
+  {
+   "id": "IDI-101",
+   "category": "IDI",
+   "words_A": 18,
+   "words_B": 26,
+   "words_C": 11,
+   "A_fmt_ok": true,
+   "A_bleu": 2.8,
+   "A_chrf": 24.3,
+   "A_rougeL": 25.6,
+   "B_bleu": 23.8,
+   "B_chrf": 45.6,
+   "B_rougeL": 46.8,
+   "C_bleu": 1.9,
+   "C_chrf": 13.7,
+   "C_rougeL": 18.7,
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "REG-101",
+   "category": "REG",
+   "words_A": 37,
+   "words_B": 34,
+   "words_C": 4,
+   "A_fmt_ok": true,
+   "A_bleu": 27.6,
+   "A_chrf": 50.7,
+   "A_rougeL": 44.4,
+   "B_bleu": 93.0,
+   "B_chrf": 96.8,
+   "B_rougeL": 97.1,
+   "C_bleu": 0.1,
+   "C_chrf": 7.2,
+   "C_rougeL": 10.5,
+   "errors": [],
+   "warnings": []
+  }
+ ]
+}

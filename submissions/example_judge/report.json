@@ -1,0 +1,72 @@
+{
+ "judges": {
+  "example-judge (copy of thesis J2 holistic scores)": {
+   "n_variants": 18,
+   "accuracy": {
+    "all": {
+     "n": 12,
+     "acc": 0.917,
+     "ties": 0.167,
+     "ci": [
+      0.833,
+      1.0
+     ]
+    },
+    "AB": {
+     "n": 6,
+     "acc": 0.833,
+     "ties": 0.333,
+     "ci": [
+      0.667,
+      1.0
+     ]
+    },
+    "AC": {
+     "n": 6,
+     "acc": 1.0,
+     "ties": 0.0,
+     "ci": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "by_cat": {
+    "EMP": 0.75,
+    "IDI": 1.0,
+    "ISA": 0.875,
+    "REF": 1.0
+   },
+   "agreement": [
+    [
+     "J1 CO-STAR rubric",
+     18,
+     "\u2013",
+     0.546
+    ],
+    [
+     "J2 CO-STAR rubric",
+     18,
+     "\u2013",
+     0.903
+    ]
+   ],
+   "mcnemar": [
+    [
+     "J1 CO-STAR rubric",
+     12,
+     4,
+     2,
+     0.688
+    ],
+    [
+     "J1 holistic + specification",
+     12,
+     0,
+     1,
+     1.0
+    ]
+   ]
+  }
+ }
+}

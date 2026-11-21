@@ -1,0 +1,50 @@
+[
+ {
+  "id": "IDI-101",
+  "category": "IDI",
+  "phenomenon": "idiom: back to the drawing board",
+  "pragmatic_layer": "pragmalinguistic",
+  "expected_illocution": "assertive (explanation)",
+  "prompt": "My team lead looked at our prototype and said 'back to the drawing board'. In one sentence, what does she want us to do?",
+  "image": null,
+  "answer_key": null,
+  "costar": {
+   "context": "A team member asks what a team lead's idiomatic reaction to a prototype means.",
+   "objective": "Explain that 'back to the drawing board' means the design has failed and the team must start the design again from the beginning.",
+   "style": "Plain, professional English.",
+   "tone": "Calm and constructive.",
+   "audience": "A team member who received the feedback.",
+   "response_format": "One sentence."
+  },
+  "reference": "She means the prototype does not work as it is, so you need to start the design again from the beginning.",
+  "candidates": {
+   "A": "She is saying the current version has failed and the team should rethink the whole design from scratch.",
+   "B": "She means the prototype is good, so you need to take it back to the drawing board in the office and start drawing the final version.",
+   "C": "lol she hated it, bin the thing and start over mate"
+  }
+ },
+ {
+  "id": "REG-101",
+  "category": "REG",
+  "phenomenon": "register: explaining a delay to a customer",
+  "pragmatic_layer": "sociopragmatic",
+  "expected_illocution": "assertive and commissive (explanation and promise)",
+  "prompt": "A customer emailed asking why her sofa delivery is late. It is stuck at the port and should arrive next Tuesday. Write a two-sentence reply.",
+  "image": null,
+  "answer_key": null,
+  "costar": {
+   "context": "A furniture shop replies by email to a customer whose sofa delivery is late because the shipment is held at the port.",
+   "objective": "Explain the cause of the delay and give the new expected delivery date of next Tuesday.",
+   "style": "Polite customer-service English.",
+   "tone": "Apologetic and reassuring.",
+   "audience": "A customer who is waiting for her order.",
+   "response_format": "Exactly two sentences."
+  },
+  "reference": "We are sorry that your sofa is late: the shipment is currently held at the port. We expect it to reach you next Tuesday, and we will confirm the delivery time with you beforehand.",
+  "candidates": {
+   "A": "Please accept our apologies for the delay, which is caused by a hold-up with the shipment at the port. Your sofa should now arrive next Tuesday, and we will confirm the exact time with you in advance.",
+   "B": "We are sorry that your sofa is late: the shipment is currently held at the port. We expect it to reach you next Thursday, and we will confirm the delivery time with you beforehand.",
+   "C": "Port delay. Tuesday probably."
+  }
+ }
+]

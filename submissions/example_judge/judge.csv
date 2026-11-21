@@ -1,0 +1,19 @@
+judge,item,cand,score
+example-judge (copy of thesis J2 holistic scores),IDI-01,A,10
+example-judge (copy of thesis J2 holistic scores),IDI-01,B,5
+example-judge (copy of thesis J2 holistic scores),IDI-01,C,3
+example-judge (copy of thesis J2 holistic scores),IDI-02,A,10
+example-judge (copy of thesis J2 holistic scores),IDI-02,B,7
+example-judge (copy of thesis J2 holistic scores),IDI-02,C,3
+example-judge (copy of thesis J2 holistic scores),ISA-01,A,10
+example-judge (copy of thesis J2 holistic scores),ISA-01,B,8
+example-judge (copy of thesis J2 holistic scores),ISA-01,C,8
+example-judge (copy of thesis J2 holistic scores),ISA-02,A,10
+example-judge (copy of thesis J2 holistic scores),ISA-02,B,10
+example-judge (copy of thesis J2 holistic scores),ISA-02,C,7
+example-judge (copy of thesis J2 holistic scores),EMP-01,A,10
+example-judge (copy of thesis J2 holistic scores),EMP-01,B,10
+example-judge (copy of thesis J2 holistic scores),EMP-01,C,7
+example-judge (copy of thesis J2 holistic scores),REF-05,A,10
+example-judge (copy of thesis J2 holistic scores),REF-05,B,6
+example-judge (copy of thesis J2 holistic scores),REF-05,C,8

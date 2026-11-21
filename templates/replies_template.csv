@@ -1,0 +1,3 @@
+model,item,output
+my-chatbot-v1,IDI-01,"<the reply to item IDI-01>"
+my-chatbot-v1,IDI-02,"<the reply to item IDI-02>"

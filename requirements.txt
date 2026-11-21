@@ -1,0 +1,7 @@
+numpy
+pandas
+scipy
+scikit-learn
+krippendorff
+sacrebleu==2.6.0
+rouge-score==0.1.2

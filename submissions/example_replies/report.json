@@ -1,0 +1,114 @@
+{
+ "replies": {
+  "hand-written example": {
+   "n": 4,
+   "fmt_ok": 3,
+   "facts_ok": 1,
+   "n_mm": 1,
+   "words": 14.0,
+   "subject_line": 0,
+   "placeholder": 0,
+   "meta_framing": 1,
+   "numbered_list": 1,
+   "bullets": 0,
+   "any_feature": 1,
+   "bleu": 10.051,
+   "chrf": 29.033,
+   "rougeL": 31.427,
+   "by_cat": {
+    "IDI": {
+     "n": 1,
+     "fmt_ok": 1,
+     "words": 26.0
+    },
+    "ISA": {
+     "n": 1,
+     "fmt_ok": 1,
+     "words": 3.0
+    },
+    "MM": {
+     "n": 1,
+     "fmt_ok": 0,
+     "words": 24.0
+    },
+    "REF": {
+     "n": 1,
+     "fmt_ok": 1,
+     "words": 3.0
+    }
+   }
+  }
+ },
+ "replies_per_reply": {
+  "hand-written example": [
+   {
+    "model": "hand-written example",
+    "item": "IDI-01",
+    "category": "IDI",
+    "n_words": 26,
+    "fmt_ok": true,
+    "facts_ok": null,
+    "subject_line": false,
+    "placeholder": false,
+    "meta_framing": false,
+    "numbered_list": false,
+    "bullets": false,
+    "any_feature": false,
+    "bleu": 8.805484743105119,
+    "chrf": 44.74613522407751,
+    "rougeL": 34.48275862068965
+   },
+   {
+    "model": "hand-written example",
+    "item": "ISA-01",
+    "category": "ISA",
+    "n_words": 3,
+    "fmt_ok": true,
+    "facts_ok": null,
+    "subject_line": false,
+    "placeholder": false,
+    "meta_framing": false,
+    "numbered_list": false,
+    "bullets": false,
+    "any_feature": false,
+    "bleu": 7.160476144948854,
+    "chrf": 4.912679357457269,
+    "rougeL": 0.0
+   },
+   {
+    "model": "hand-written example",
+    "item": "REF-05",
+    "category": "REF",
+    "n_words": 3,
+    "fmt_ok": true,
+    "facts_ok": null,
+    "subject_line": false,
+    "placeholder": false,
+    "meta_framing": false,
+    "numbered_list": false,
+    "bullets": false,
+    "any_feature": false,
+    "bleu": 2.3517745856009116,
+    "chrf": 18.138007385634864,
+    "rougeL": 30.0
+   },
+   {
+    "model": "hand-written example",
+    "item": "MM-01",
+    "category": "MM",
+    "n_words": 24,
+    "fmt_ok": false,
+    "facts_ok": true,
+    "subject_line": false,
+    "placeholder": false,
+    "meta_framing": true,
+    "numbered_list": true,
+    "bullets": false,
+    "any_feature": true,
+    "bleu": 21.88522751124055,
+    "chrf": 48.336421806234895,
+    "rougeL": 61.22448979591836
+   }
+  ]
+ }
+}

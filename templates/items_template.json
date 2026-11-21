@@ -1,0 +1,26 @@
+[
+ {
+  "id": "IDI-101",
+  "category": "IDI",
+  "phenomenon": "idiom: <the idiom or phenomenon tested>",
+  "pragmatic_layer": "pragmalinguistic",
+  "expected_illocution": "assertive (explanation)",
+  "prompt": "<the user's message, as a user would write it>",
+  "image": null,
+  "answer_key": null,
+  "costar": {
+   "context": "<the situation>",
+   "objective": "<what the reply must achieve, including any implied meaning>",
+   "style": "<register>",
+   "tone": "<politeness and attitude>",
+   "audience": "<who is addressed>",
+   "response_format": "<for example: One sentence. / Exactly two sentences.>"
+  },
+  "reference": "<a good reference reply>",
+  "candidates": {
+   "A": "<appropriate reply, worded independently of the reference>",
+   "B": "<one misreading or wrong fact, reusing the reference's wording>",
+   "C": "<right content, wrong register or tone>"
+  }
+ }
+]
